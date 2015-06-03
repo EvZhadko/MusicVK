@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.mikepenz.materialdrawer\library\0.9.5\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="196889103665d7eae17105a5a78f141086044301">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-c5ca4887051590773e77177cab6d4dd6cdf29a47.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-58cf08659b59e565a2fc46d49286e6f6669a9875.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.mikepenz.iconics\library\0.7.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6d88ec155032460a5f4efa723a04c460d3391193">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-e1904ee03d0cbae395a86b8cf35968b5b25d6f06.jar" />
+    </item>
+    <item
+        jar="D:\Android\adt-bundle-windows-x86_64\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-3cd3720082fae9ee3125c2abf8089fd4e9ea35bb.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-3a880695545af797ba110500eb1565e11fbb72e4.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-f9e0f6633871833955faf0a5195034ff4b0181f9.jar" />
+    </item>
+
+</items>
