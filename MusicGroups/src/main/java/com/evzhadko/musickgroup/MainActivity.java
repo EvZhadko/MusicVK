@@ -1,8 +1,11 @@
 package com.evzhadko.musickgroup;
 
+
 import android.app.Activity;
+import android.support.v4.app.Fragment;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,6 +25,11 @@ import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Badgeable;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
+
+import com.evzhadko.musickgroup.ScreenOne;
+import com.evzhadko.musickgroup.ScreenTwo;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -149,6 +157,28 @@ public class MainActivity extends ActionBarActivity {
                                 }
                             }
                         }
+
+
+                        Fragment fragment = null;
+
+                        fragment = new ScreenOne();
+
+
+                        // Insert the fragment by replacing any existing fragment
+                        if (fragment != null) {
+                            FragmentManager fragmentManager = getSupportFragmentManager();
+                            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                            Log.e(this.getClass().getName(), "Fragment is created");
+                            // Highlight the selected item, update the title, and close the drawer
+                            //mDrawerList.setItemChecked(position, true);
+                            //setTitle(mScreenTitles[position]);
+                            //mDrawerLayout.closeDrawer(mDrawerList);
+                        } else {
+                            // Error
+                            Log.e(this.getClass().getName(), "Error. Fragment is not created");
+                        }
+
+
                     }
                 })
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
@@ -157,6 +187,7 @@ public class MainActivity extends ActionBarActivity {
                     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
                         if (drawerItem instanceof SecondaryDrawerItem) {
                             Toast.makeText(MainActivity.this, MainActivity.this.getString(((SecondaryDrawerItem) drawerItem).getNameRes()), Toast.LENGTH_SHORT).show();
+
                         }
                         return false;
                     }
