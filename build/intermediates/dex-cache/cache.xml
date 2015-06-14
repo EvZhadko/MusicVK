@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.mikepenz.materialdrawer\library\0.9.5\jars\classes.jar"
+        jar="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="196889103665d7eae17105a5a78f141086044301">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-c5ca4887051590773e77177cab6d4dd6cdf29a47.jar" />
-    </item>
-    <item
-        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-58cf08659b59e565a2fc46d49286e6f6669a9875.jar" />
-    </item>
-    <item
-        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.mikepenz.iconics\library\0.7.3\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6d88ec155032460a5f4efa723a04c460d3391193">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-e1904ee03d0cbae395a86b8cf35968b5b25d6f06.jar" />
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\classes-6aa4702c2761813171bac29683152b577cf76fa2.jar" />
     </item>
     <item
         jar="D:\Android\adt-bundle-windows-x86_64\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-3cd3720082fae9ee3125c2abf8089fd4e9ea35bb.jar" />
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-3cd3720082fae9ee3125c2abf8089fd4e9ea35bb.jar" />
     </item>
     <item
-        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jar="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\exploded-aar\com.mikepenz.iconics\library\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8d43993b8e07bdedefc353b15ab9f4cfe655b924">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\classes-fb16024f9f829235bb26fc48765e0a5b056df76e.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-3a880695545af797ba110500eb1565e11fbb72e4.jar" />
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\classes-29db5a696cb48d4b5e9b4aa2408c02f42536affa.jar" />
     </item>
     <item
-        jar="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jar="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\app\build\intermediates\pre-dexed\debug\classes-f9e0f6633871833955faf0a5195034ff4b0181f9.jar" />
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-33f4335fe5411f2fca5af20cf68604b6097a30ef.jar" />
+    </item>
+    <item
+        jar="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\exploded-aar\com.mikepenz.materialdrawer\library\2.9.8\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="794e4ee4dd15254ed3ca7202a7ac7afefbb7e3f5">
+        <dex dex="D:\Android\AS_workspace_2015\MusickGroup\MusicGroups\build\intermediates\pre-dexed\debug\classes-0676fce0ff4bbeb4b015bc75a40e611357ab5a4d.jar" />
     </item>
 
 </items>
