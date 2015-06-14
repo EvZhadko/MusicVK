@@ -58,9 +58,9 @@ public class MainActivity extends ActionBarActivity {
         GroupList_data.add(new GroupList(R.drawable.pmpage,"#AA7CFF66","pmpage","Perception of music",""));
         GroupList_data.add(new GroupList(R.drawable.nomuzlife,"#AA7CFF66","nomuzlife","Новая Музыка [No Music-No Life]",""));
         GroupList_data.add(new GroupList(R.drawable.another_muz,"#AA7CFF66","another_muz","Другая музыка",""));
-        GroupList_data.add(new GroupList(R.drawable.viplounge,"#AA7CFF66","viplounge","Lounge Music &amp; Lifestyle　Chillout Jazz Nu Disco",""));
-        GroupList_data.add(new GroupList(R.drawable.dutchhouse,"#AA7CFF66","dutchhouse","Dutch House Music™",""));
-        GroupList_data.add(new GroupList(R.drawable.myfavoritesister,"#AA7CFF66","myfavoritesister","AlteR |♫ Music / ͡๏̮͡๏ Films etc.|",""));
+        GroupList_data.add(new GroupList(R.drawable.viplounge,"#AA7CFF66","viplounge","Lounge Music Lifestyle　Chillout Jazz Nu Disco",""));
+        GroupList_data.add(new GroupList(R.drawable.dutchhouse,"#AA7CFF66","dutchhouse","Dutch House Music",""));
+        GroupList_data.add(new GroupList(R.drawable.myfavoritesister,"#AA7CFF66","myfavoritesister","AlteR |Music / Films etc.|",""));
         GroupList_data.add(new GroupList(R.drawable.newalbums,"#AA7CFF66","newalbums","Новые Альбомы",""));
         GroupList_data.add(new GroupList(R.drawable.bbcradio1,"#AA7CFF66","bbcradio1","BBC Radio 1 / 1Xtra",""));
 
@@ -75,9 +75,25 @@ public class MainActivity extends ActionBarActivity {
                 .withToolbar(toolbar)
                 .withActionBarDrawerToggle(true)
                 .withHeader(R.layout.drawer_header)
+                //.addDrawerItems(new PrimaryDrawerItem().)
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withName(GroupList_data.get(1).GroupName.toString()).withIcon(res.getDrawable(R.drawable.exclusive_music)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(2).GroupName.toString()).withIcon(res.getDrawable(R.drawable.exclusive_muzic)).withIdentifier(1)
+                        new PrimaryDrawerItem().withName(GroupList_data.get(0).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(0).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(1).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(1).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(2).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(2).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(3).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(3).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(4).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(4).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(5).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(5).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(6).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(6).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(7).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(7).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(8).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(8).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(9).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(9).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(10).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(10).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(11).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(11).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(12).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(12).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(R.string.drawer_item_favorites).withIcon(FontAwesome.Icon.faw_heartbeat).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(R.string.drawer_item_settings).withIcon(FontAwesome.Icon.faw_cog).withIdentifier(1)
+
+
                         /*
                         new PrimaryDrawerItem().withName(R.string.drawer_item_home).withIcon(FontAwesome.Icon.faw_home).withBadge("99").withIdentifier(1),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),
@@ -88,7 +104,7 @@ public class MainActivity extends ActionBarActivity {
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(R.string.drawer_item_contact).withIcon(FontAwesome.Icon.faw_github).withBadge("12+").withIdentifier(1)
                         */
-                        )
+                )
                 .withOnDrawerListener(new Drawer.OnDrawerListener() {
                     @Override
                     public void onDrawerOpened(View drawerView) {
@@ -100,13 +116,17 @@ public class MainActivity extends ActionBarActivity {
                     @Override
                     public void onDrawerClosed(View drawerView) {
                     }
-        })
+                })
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     // Обработка клика
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+                        Log.d("test", "Нажал на меню и вывалился наъ");
+
                         if (drawerItem instanceof Nameable) {
-                            Toast.makeText(MainActivity.this, MainActivity.this.getString(((Nameable) drawerItem).getNameRes()), Toast.LENGTH_SHORT).show();
+                            //Nameable nameable = (Nameable) drawerItem;
+                            //Toast.makeText(MainActivity.this, MainActivity.this.getString(((Nameable) drawerItem).getNameRes()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, ((Nameable) drawerItem).getName(), Toast.LENGTH_SHORT).show();
                         }
                         if (drawerItem instanceof Badgeable) {
                             Badgeable badgeable = (Badgeable) drawerItem;
