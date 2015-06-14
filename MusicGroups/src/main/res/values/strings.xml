@@ -10,4 +10,6 @@
     <string name="drawer_item_help">Help</string>
     <string name="drawer_item_open_source">Open Source</string>
     <string name="drawer_item_contact">Contact</string>
+    <string name="screen_one">Screen one</string>
+    <string name="screen_two">Screen two</string>
 </resources>

@@ -61,12 +61,16 @@ public class MainActivity extends ActionBarActivity {
         GroupList_data.add(new GroupList(R.drawable.viplounge,"#AA7CFF66","viplounge","Lounge Music Lifestyle　Chillout Jazz Nu Disco",""));
         GroupList_data.add(new GroupList(R.drawable.dutchhouse,"#AA7CFF66","dutchhouse","Dutch House Music",""));
         GroupList_data.add(new GroupList(R.drawable.myfavoritesister,"#AA7CFF66","myfavoritesister","AlteR |Music / Films etc.|",""));
-        GroupList_data.add(new GroupList(R.drawable.newalbums,"#AA7CFF66","newalbums","Новые Альбомы",""));
+        //GroupList_data.add(new GroupList(R.drawable.newalbums,"#AA7CFF66","newalbums","Новые Альбомы",""));
         GroupList_data.add(new GroupList(R.drawable.bbcradio1,"#AA7CFF66","bbcradio1","BBC Radio 1 / 1Xtra",""));
 
         /***
          *  заполняем массив групп
          */
+
+
+
+
         Resources res = getResources();
 
         // Инициализируем Navigation Drawer
@@ -77,19 +81,20 @@ public class MainActivity extends ActionBarActivity {
                 .withHeader(R.layout.drawer_header)
                 //.addDrawerItems(new PrimaryDrawerItem().)
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withName(GroupList_data.get(0).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(0).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(1).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(1).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(2).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(2).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(3).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(3).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(4).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(4).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(5).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(5).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(6).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(6).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(7).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(7).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(8).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(8).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(9).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(9).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(10).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(10).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(11).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(11).GroupIcon)).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(GroupList_data.get(12).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(12).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(0).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(0).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(1).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(1).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(2).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(2).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(3).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(3).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(4).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(4).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(5).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(5).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(6).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(6).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(7).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(7).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(8).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(8).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(9).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(9).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(10).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(10).GroupIcon)).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(GroupList_data.get(11).GroupName.toString()).withIcon(getResources().getDrawable(GroupList_data.get(11).GroupIcon)).withIdentifier(1),
+                        //new PrimaryDrawerItem().withName(GroupList_data.get(12).GroupName.toString()).withIcon(res.getDrawable(GroupList_data.get(12).GroupIcon)).withIdentifier(1),
+                        new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_favorites).withIcon(FontAwesome.Icon.faw_heartbeat).withIdentifier(1),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_settings).withIcon(FontAwesome.Icon.faw_cog).withIdentifier(1)
 
@@ -105,7 +110,8 @@ public class MainActivity extends ActionBarActivity {
                         new SecondaryDrawerItem().withName(R.string.drawer_item_contact).withIcon(FontAwesome.Icon.faw_github).withBadge("12+").withIdentifier(1)
                         */
                 )
-                .withOnDrawerListener(new Drawer.OnDrawerListener() {
+                /*
+                  .withOnDrawerListener(new Drawer.OnDrawerListener() {
                     @Override
                     public void onDrawerOpened(View drawerView) {
                         // Скрываем клавиатуру при открытии Navigation Drawer
@@ -117,6 +123,7 @@ public class MainActivity extends ActionBarActivity {
                     public void onDrawerClosed(View drawerView) {
                     }
                 })
+                 */
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     // Обработка клика
