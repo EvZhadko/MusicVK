@@ -48,6 +48,11 @@ public class MainActivity extends ActionBarActivity {
         //http://habrahabr.ru/post/250765/
         //http://habrahabr.ru/post/259429/
 
+        //ListView        http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/
+        //https://github.com/navasmdc/MaterialDesignLibrary
+        //http://angrytools.com/android/button/ Android Button Maker
+
+
         // Инициализируем Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
